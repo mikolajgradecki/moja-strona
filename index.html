@@ -1,101 +1,409 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Strona domowa Teatru Miejskiego. Repertuar, informacje, bilety i kontakt." />
-  <title>Teatr Miejski</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teatr Miejski - Scena Pełna Emocji</title>
+    <meta name="description" content="Teatr Miejski - najlepsze spektakle, wybitni aktorzy, niezapomniane przedstawienia. Odkryj magię teatru w sercu miasta.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Logo Teatru Miejskiego" class="logo-image">
+                    <div class="logo-text">
+                        <h1 class="logo-title">Teatr Miejski</h1>
+                        <p class="logo-subtitle">Scena Pełna Emocji</p>
+                    </div>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-  <header>
-    <img src="images/logo.png" alt="Logo Teatr Miejski" class="logo" />
-    <h1>Teatr Miejski</h1>
-    <p>Sztuka blisko Ciebie</p>
-  </header>
+    <!-- Navigation -->
+    <nav id="nav" class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#hero" class="nav-link active">Start</a></li>
+                <li><a href="#about" class="nav-link">O nas</a></li>
+                <li><a href="#repertoire" class="nav-link">Repertuar</a></li>
+                <li><a href="#pricing" class="nav-link">Bilety</a></li>
+                <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <nav>
-    <ul>
-      <li><a href="#hero">Start</a></li>
-      <li><a href="#about">O nas</a></li>
-      <li><a href="#repertoire">Repertuar</a></li>
-      <li><a href="#pricing">Cennik</a></li>
-      <li><a href="#gallery">Galeria</a></li>
-      <li><a href="#contact">Kontakt</a></li>
-      <li><a href="#newsletter">Newsletter</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <section id="hero">
-      <img src="images/wnetrze.png" alt="Wnętrze teatru" class="hero-img" />
-      <h2>Zapraszamy na wyjątkowe spektakle!</h2>
-      <a href="#repertoire" class="btn">Zobacz repertuar</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <img src="images/wnetrze.png" alt="Wnętrze teatru" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Odkryj Magię<br><span class="hero-highlight">Teatru</span></h1>
+                <p class="hero-description">Przeżyj niezapomniane chwile w sercu kultury miejskiej. Każde przedstawienie to podróż przez ludzkie emocje i niepowtarzalne artystyczne doświadczenia.</p>
+                <div class="hero-buttons">
+                    <a href="#repertoire" class="btn btn-primary">Zobacz repertuar</a>
+                    <a href="#pricing" class="btn btn-secondary">Kup bilet</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-      <h2>O nas</h2>
-      <p>Teatr Miejski to przestrzeń dla kultury, emocji i ludzi. Istniejemy od 1985 roku. Nasz zespół łączy doświadczenie z pasją do sztuki scenicznej.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Teatrze Miejskim</h2>
+                <p class="section-subtitle">Tradycja, pasja i artystyczna doskonałość od 1925 roku</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nasza Historia</h3>
+                    <p>Teatr Miejski powstał w 1925 roku jako symbol kulturalnego odrodzenia miasta. Przez niemal sto lat swojej działalności prezentowaliśmy najlepsze dzieła teatralne, od klasyki po współczesne utwory.</p>
+                    
+                    <h3>Misja</h3>
+                    <p>Wierzymy, że teatr to nie tylko rozrywka, ale przede wszystkim sposób na poznanie siebie i świata. Nasze przedstawienia poruszają najważniejsze tematy ludzkiej egzystencji, inspirują do refleksji i wzruszają do łez.</p>
+                    
+                    <h3>Zespół</h3>
+                    <p>Pracuje z nami grupa wybitnych aktorów, reżyserów i artystów, którzy każdego dnia tworzą niepowtarzalną atmosferę naszej sceny. To dzięki nim każde przedstawienie staje się wyjątkowym wydarzeniem artystycznym.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">98</span>
+                        <span class="stat-label">Lat tradycji</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2,500+</span>
+                        <span class="stat-label">Spektakli</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">45</span>
+                        <span class="stat-label">Artystów</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">850</span>
+                        <span class="stat-label">Miejsc</span>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="repertoire">
-      <h2>Repertuar</h2>
-      <ul>
-        <li><strong>"Dziady"</strong> – 1 czerwca 2025, godz. 18:00</li>
-        <li><strong>"Hamlet"</strong> – 7 czerwca 2025, godz. 19:00</li>
-        <li><strong>"Wesele"</strong> – 15 czerwca 2025, godz. 17:00</li>
-      </ul>
+    <!-- Repertoire Section -->
+    <section id="repertoire" class="repertoire">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Aktualny Repertuar</h2>
+                <p class="section-subtitle">Nadchodzące spektakle i przedstawienia</p>
+            </div>
+            <div class="repertoire-grid">
+                <article class="show-card">
+                    <div class="show-date">
+                        <div class="date-day">15</div>
+                        <div class="date-month">STY</div>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">Hamlet</h3>
+                        <p class="show-description">Klasyczna tragedia Szekspira w nowoczesnej interpretacji</p>
+                        <div class="show-details">
+                            <span class="show-time">19:30</span>
+                            <span class="show-genre">Dramat</span>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="show-btn">Bilety</a>
+                </article>
+
+                <article class="show-card">
+                    <div class="show-date">
+                        <div class="date-day">22</div>
+                        <div class="date-month">STY</div>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">Wesele</h3>
+                        <p class="show-description">Arcydzieło Wyspiańskiego pełne symboliki i patriotyzmu</p>
+                        <div class="show-details">
+                            <span class="show-time">18:00</span>
+                            <span class="show-genre">Dramat</span>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="show-btn">Bilety</a>
+                </article>
+
+                <article class="show-card">
+                    <div class="show-date">
+                        <div class="date-day">28</div>
+                        <div class="date-month">STY</div>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">Sen nocy letniej</h3>
+                        <p class="show-description">Magiczna komedia o miłości i przemianie</p>
+                        <div class="show-details">
+                            <span class="show-time">19:00</span>
+                            <span class="show-genre">Komedia</span>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="show-btn">Bilety</a>
+                </article>
+
+                <article class="show-card">
+                    <div class="show-date">
+                        <div class="date-day">05</div>
+                        <div class="date-month">LUT</div>
+                    </div>
+                    <div class="show-info">
+                        <h3 class="show-title">Trzech w czółnie</h3>
+                        <p class="show-description">Współczesna komedia o przyjaźni i przygodach</p>
+                        <div class="show-details">
+                            <span class="show-time">20:00</span>
+                            <span class="show-genre">Komedia</span>
+                        </div>
+                    </div>
+                    <a href="#pricing" class="show-btn">Bilety</a>
+                </article>
+            </div>
+        </div>
     </section>
 
-    <section id="pricing">
-      <h2>Cennik</h2>
-      <table>
-        <thead>
-          <tr><th>Rodzaj biletu</th><th>Cena</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Normalny</td><td>40 zł</td></tr>
-          <tr><td>Ulgowy</td><td>25 zł</td></tr>
-          <tr><td>VIP</td><td>80 zł</td></tr>
-        </tbody>
-      </table>
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cennik Biletów</h2>
+                <p class="section-subtitle">Wybierz najlepsze miejsce dla siebie</p>
+            </div>
+            <div class="pricing-table">
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Balkon</h3>
+                    <div class="pricing-price">
+                        <span class="price-amount">45</span>
+                        <span class="price-currency">zł</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Miejsca na balkonie</li>
+                        <li>Dobra widoczność sceny</li>
+                        <li>Klimatyzacja</li>
+                        <li>Dostęp do szatni</li>
+                    </ul>
+                    <button class="btn btn-pricing">Wybierz miejsca</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Najpopularniejsze</div>
+                    <h3 class="pricing-title">Parter</h3>
+                    <div class="pricing-price">
+                        <span class="price-amount">75</span>
+                        <span class="price-currency">zł</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Miejsca na parterze</li>
+                        <li>Doskonała widoczność</li>
+                        <li>Blisko sceny</li>
+                        <li>Foyer z barem</li>
+                        <li>Szatnia</li>
+                    </ul>
+                    <button class="btn btn-pricing primary">Wybierz miejsca</button>
+                </div>
+
+                <div class="pricing-card">
+                    <h3 class="pricing-title">Loża</h3>
+                    <div class="pricing-price">
+                        <span class="price-amount">120</span>
+                        <span class="price-currency">zł</span>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Ekskluzywne loże</li>
+                        <li>Najlepsza widoczność</li>
+                        <li>VIP obsługa</li>
+                        <li>Drink w cenie</li>
+                        <li>Prywatna szatnia</li>
+                    </ul>
+                    <button class="btn btn-pricing">Wybierz miejsca</button>
+                </div>
+            </div>
+            <div class="pricing-note">
+                <p><strong>Zniżki:</strong> Studenci i seniorzy 20% taniej | Grupy 10+ osób 15% taniej</p>
+            </div>
+        </div>
     </section>
 
-    <section id="gallery">
-      <h2>Galeria</h2>
-      <div class="gallery">
-        <img src="images/galeria1.jpg" alt="Scena 1" />
-        <img src="images/galeria2.jpg" alt="Scena 2" />
-        <img src="images/galeria3.jpg" alt="Scena 3" />
-      </div>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Galeria</h2>
+                <p class="section-subtitle">Zajrzyj za kulisy naszego teatru</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/galeria1.jpg" alt="Spektakl Hamlet" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Hamlet - Scena finalna</h3>
+                            <p>Dramatyczny finał tragedii Szekspira</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeria2.jpg" alt="Wnętrze teatru" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Historyczna sala teatralna</h3>
+                            <p>Piękno architektury z 1925 roku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="images/galeria3.jpg" alt="Aktorzy na scenie" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <div class="gallery-content">
+                            <h3>Nasz zespół aktorski</h3>
+                            <p>Pasja i profesjonalizm na scenie</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Email: <a href="mailto:kontakt@teatrmiejski.pl">kontakt@teatrmiejski.pl</a></p>
-      <p>Telefon: +48 123 456 789</p>
-      <p>Adres: ul. Teatralna 5, 00-001 Warszawa</p>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Skontaktuj się z nami</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Adres</h3>
+                            <p>ul. Teatralna 15<br>00-001 Warszawa</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Telefon</h3>
+                            <p>+48 22 123 45 67<br>Pon-Pt: 10:00-18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>info@teatrmiejski.pl<br>bilety@teatrmiejski.pl</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <div class="contact-details">
+                            <h3>Godziny otwarcia</h3>
+                            <p>Kasa biletowa:<br>Wt-Nd: 12:00-19:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>🗺️ Znajdź nas</h3>
+                            <p>Teatr Miejski znajduje się w samym centrum miasta, 5 minut spacerem od stacji metra Centrum.</p>
+                            <div class="map-transport">
+                                <div class="transport-item">🚇 Metro: Centrum (5 min)</div>
+                                <div class="transport-item">🚌 Autobus: 15, 18, 35</div>
+                                <div class="transport-item">🚗 Parking: ul. Parkowa 2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="newsletter">
-      <h2>Zapisz się na newsletter</h2>
-      <form id="newsletter-form">
-        <input type="email" name="email" placeholder="Twój email" required />
-        <button type="submit">Zapisz się</button>
-      </form>
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2 class="newsletter-title">Bądź na bieżąco</h2>
+                    <p class="newsletter-description">Zapisz się do newslettera i jako pierwszy dowiedz się o nowych spektaklach, promocjach i wydarzeniach specjalnych.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Twój adres email" class="newsletter-input" required>
+                        <button type="submit" class="newsletter-btn">Zapisz się</button>
+                    </div>
+                    <div class="form-message" id="formMessage"></div>
+                    <p class="newsletter-privacy">Szanujemy Twoją prywatność. Możesz się wypisać w każdej chwili.</p>
+                </form>
+            </div>
+        </div>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 Teatr Miejski | Wszelkie prawa zastrzeżone</p>
-    <p>
-      <a href="#">Facebook</a> | 
-      <a href="#">Instagram</a> | 
-      <a href="#">YouTube</a>
-    </p>
-  </footer>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Teatr Miejski</h3>
+                        <p>Scena Pełna Emocji</p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Informacje</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">O teatrze</a></li>
+                        <li><a href="#repertoire">Repertuar</a></li>
+                        <li><a href="#pricing">Cennik</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Praktyczne</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Regulamin</a></li>
+                        <li><a href="#">Polityka prywatności</a></li>
+                        <li><a href="#">Dla niepełnosprawnych</a></li>
+                        <li><a href="#">Współpraca</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <div class="footer-contact">
+                        <p>ul. Teatralna 15, 00-001 Warszawa</p>
+                        <p>Tel: +48 22 123 45 67</p>
+                        <p>Email: info@teatrmiejski.pl</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Teatr Miejski. Wszystkie prawa zastrzeżone.</p>
+                <p>Wykonanie: <span class="footer-highlight">Frontend Static Master</span></p>
+            </div>
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
-</html>
+</html> 

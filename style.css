@@ -1146,7 +1146,6 @@ p {
 /* ========================================
    ANIMATIONS & EFFECTS
 ======================================== */
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -1324,4 +1323,72 @@ p {
 
 .gallery-item:nth-child(3) .gallery-image {
     background: linear-gradient(225deg, var(--black-primary), var(--gold-dark));
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("images/wnetrze.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, 
+        rgba(10, 10, 10, 0.7) 0%, 
+        rgba(212, 175, 55, 0.1) 50%, 
+        rgba(10, 10, 10, 0.8) 100%);
+    z-index: -1;
+}
+
+.hero-content {
+    text-align: center;
+    color: var(--white-primary);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-highlight {
+    color: var(--primary-gold);
+    position: relative;
+}
+
+.hero-description {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+    line-height: 1.8;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
 }

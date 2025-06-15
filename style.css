@@ -1272,10 +1272,6 @@ p {
     z-index: -1;
 }
 
-.hero-image {
-    opacity: 0; /* Hide actual image if it fails to load */
-}
-
 /* Gallery placeholders */
 .gallery-image {
     background: var(--gray-light);

@@ -1247,26 +1247,6 @@ p {
     line-height: 1.2;
 }
 
-/* Hero background placeholder */
-.hero-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: 
-        linear-gradient(135deg, 
-            var(--black-primary) 0%, 
-            var(--black-secondary) 40%, 
-            var(--primary-gold) 70%, 
-            var(--gold-light) 100%),
-        radial-gradient(circle at 30% 70%, 
-            rgba(212, 175, 55, 0.3) 0%, 
-            transparent 70%);
-    z-index: -1;
-}
-
 /* Gallery placeholders */
 .gallery-image {
     background: var(--gray-light);
